@@ -1,20 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.4.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
-	<groupId>tn.esprit.spring</groupId>
-	<artifactId>Timesheet-spring-boot-core-data-jpa-mvc-REST</artifactId>
+	
+	
+       
+	<groupId>com.mt</groupId>
+        <artifactId>java-web-app</artifactId>
 	<version>1.1</version>
 	<packaging>jar</packaging>
-	<name>Timesheet-spring-boot-core-data-jpa-mvc-REST</name>
-	<description>Timesheet-spring-boot-core-data-jpa-mvc-REST-1</description>
-
        <properties>
 	        <java.version>1.8</java.version>
 		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
@@ -23,7 +16,7 @@
 		<spring.version>5.0.7.RELEASE</spring.version>
 		<junit.version>4.12</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-	        <sonar.host.url>http://192.168.43.148:9000 </sonar.host.url>
+	        <sonar.host.url>http://192.168.100.180:9000 </sonar.host.url>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	        <sonar.groovy.binaries>target</sonar.groovy.binaries>
@@ -118,12 +111,12 @@
         <repository>
            <id>nexus</id>
 	   <name>Release nexus Repository </name>
-           <url>http://192.168.43.148:8081/repository/NexusRepository/</url>
+           <url>http://192.168.100.180:8081/repository/NexusRepository/</url>
         </repository>
         <snapshotRepository>
            <id>nexus</id>
            <name>Snapshot nexus Repository </name>
-           <url>http://192.168.43.148:8081/repository/SnapshotNexusRepositorys/</url>
+           <url>http://192.168.100.180:8081/repository/SnapshotNexusRepositorys/</url>
         </snapshotRepository>
    </distributionManagement>
   <profiles>
@@ -133,7 +126,7 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <sonar.host.url>http://192.168.43.148:9000/</sonar.host.url>
+                <sonar.host.url>http://192.168.100.180:9000/</sonar.host.url>
                 <sonar-maven-plugin.version>3.3.0.603</sonar-maven-plugin.version>
             </properties>
             
